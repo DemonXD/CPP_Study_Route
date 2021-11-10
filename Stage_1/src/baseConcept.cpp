@@ -13,7 +13,7 @@ void VARS()
     std::cout << "double length: " << sizeof(double) << std::endl;
 }
 
-static const int SALARY = 10000;
+// static const int SALARY = 10000;
 
 void KEYWORD()
 {
@@ -40,7 +40,7 @@ void CONDITIONALOPERATOR()
     int temp = true ? 10 : 20;
     std::cout << temp << std::endl;
     std::cout << "将三元运算当作左值 (condition ? a : b) = value" << std::endl;
-    int a, b;
+    int a=0, b=0;
     const bool condition = true;
     // 可以利用先期条件决定给哪个变量进行赋值
     (condition ? a : b) = 10;
@@ -64,18 +64,18 @@ void ARRAY2D()
     // 2D Array and nested loop
     std::cout << "--------------------2D array-------------------" << std::endl;
     int numGrid[2][2] = {
-        0, 1,
-        2, 3,
+        {0, 1},
+        {2, 3},
     };
     int figures[7][4] =
         {
-            1, 3, 5, 7, // I
-            2, 4, 5, 7, // Z
-            3, 5, 4, 6, // S
-            3, 5, 4, 7, // T
-            2, 3, 5, 7, // L
-            3, 5, 7, 6, // J
-            2, 3, 4, 5, // O
+            {1, 3, 5, 7}, // I
+            {2, 4, 5, 7}, // Z
+            {3, 5, 4, 6}, // S
+            {3, 5, 4, 7}, // T
+            {2, 3, 5, 7}, // L
+            {3, 5, 7, 6}, // J
+            {2, 3, 4, 5}, // O
         };
     std::cout << "figures[0][0] :" << figures[0][0] << ",";
     std::cout << "figures[1][0] :" << figures[1][0] << std::endl;
