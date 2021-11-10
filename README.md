@@ -1,7 +1,7 @@
 ## C++ Based on Game Programming Study Route
 
 Comments:  
-- platform: Windows
+- platform: ~~Windows~~ MaxOS(Apple Silicon)
 - Editor: Visual Studio Code
     - C/C++ Extension
     - Code Runner

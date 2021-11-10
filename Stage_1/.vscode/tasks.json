@@ -4,23 +4,23 @@
         {
             "type": "shell", // 任务名称，与launch.json的preLaunchTask相对应
             "label": "Compile",
-            "command": "C:\\Program Files\\mingw64\\bin\\g++", // 如果用MinGW，编译C用gcc，编译c++用g++
+            "command": "/usr/bin/clang++", // 如果用MinGW，编译C用gcc，编译c++用g++
             "args": [
                 // "${file}",
                 "main.cpp",
                 "src/baseConcept.cpp",
                 "-o", // 指定输出文件名，不加该参数则默认输出a.exe 
                 // "${fileDirname}/${fileBasenameNoExtension}.exe",
-                "main.exe",
-                "-g", // 生成和调试有关的信息
+                "main",
+                // "-g", // 生成和调试有关的信息
                 "-Wall", // 开启额外警告
-                "-static-libgcc", // 静态链接 
+                // "-static-libgcc", // 静态链接 
                 // "-IC:/Program Files/SFML-2.5.1/include",
                 // "-LC:/Program Files/SFML-2.5.1/lib",
                 // "-lsfml-graphics",
                 // "-lsfml-window",
                 // "-lsfml-system",
-                "-fexec-charset=GBK",
+                // "-fexec-charset=GBK",
                 "-std=c++1z" // c++1z即c++17，C语言最新标准为c11，或根据自己的需要进行修改 
             ], // 编译命令参数 
             "group": {
